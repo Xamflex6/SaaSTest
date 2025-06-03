@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Button } from '@shadcn/ui';
+import { Button } from './ui';
 import { loadStripe } from '@stripe/stripe-js';
 
 export function PricingModal() {

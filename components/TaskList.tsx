@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { usePomodoroStore } from '../lib/store';
-import { Button, Input } from '@shadcn/ui';
+import { Button, Input } from './ui';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const schema = z.object({ task: z.string().min(1) });
