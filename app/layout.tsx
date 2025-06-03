@@ -1,27 +1,21 @@
 import '../styles/globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
 import { Navbar } from '../components/Navbar';
-import { Sidebar } from '../components/Sidebar';
 import { Providers } from '../components/Providers';
 
-const inter = Inter({ subsets: ['latin'] });
-
 export const metadata: Metadata = {
-  title: 'FocusTime',
+  title: 'PomodoroTimerByXamflex',
   description: 'Pomodoro SaaS application',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={inter.className + ' min-h-screen bg-white dark:bg-zinc-900 antialiased'}>
+    <html lang="en" className={`h-full dark ${GeistSans.className}`}> 
+      <body className="min-h-screen h-full bg-zinc-900 text-zinc-100 antialiased transition-colors duration-300"> 
         <Providers>
           <Navbar />
-          <div className="flex">
-            <Sidebar />
-            <main className="flex-1 p-4">{children}</main>
-          </div>
+          <main className="flex-1 p-4 md:p-8 max-w-4xl mx-auto w-full min-h-[calc(100vh-64px)]">{children}</main>
         </Providers>
       </body>
     </html>

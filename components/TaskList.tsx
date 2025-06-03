@@ -27,24 +27,22 @@ export default function TaskList() {
   return (
     <div className="space-y-2">
       <form onSubmit={handleSubmit(onSubmit)} className="flex gap-2">
-        <Input placeholder="New task" {...register('task')} />
-        <Button type="submit">Add</Button>
+        <Input placeholder="Nouvelle tâche" {...register('task')} />
+        <Button type="submit" className="hover:scale-105 active:scale-95 transition-transform duration-150">Ajouter</Button>
       </form>
-      {errors.task && <p className="text-red-500">{errors.task.message}</p>}
+      {errors.task && <p className="text-red-500 text-sm italic animate-pulse">{errors.task.message}</p>}
       <ul className="space-y-1">
         <AnimatePresence>
           {tasks.map((t, i) => (
             <motion.li
               key={t}
-              className="flex justify-between p-2 border rounded"
+              className="flex justify-between items-center p-2 border border-zinc-700 rounded bg-zinc-800 hover:bg-zinc-700 transition-colors group shadow-sm"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
-              {t}
-              <Button variant="ghost" onClick={() => removeTask(i)}>
-                Remove
-              </Button>
+              <span className="truncate group-hover:text-blue-400 transition-colors">{t}</span>
+              <Button variant="ghost" onClick={() => removeTask(i)} className="text-red-400 hover:text-red-600 hover:bg-red-100/10 transition-colors">Supprimer</Button>
             </motion.li>
           ))}
         </AnimatePresence>
