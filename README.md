@@ -34,12 +34,3 @@ styles/             # Global styles (Tailwind)
 npm install
 npm run dev
 ```
-
-The application uses Supabase for data storage et Stripe Checkout pour les abonnements.
-
-## Setup
-
-1. Copy `.env.local.example` to `.env.local`.
-2. Créez un projet sur [Supabase](https://supabase.com) et collez les clés dans `.env.local`.
-3. Depuis votre dashboard Stripe, créez un price ID et ajoutez votre clé publishable et le prix dans `.env.local`.
-4. Run `npm install` whenever `package.json` changes.
