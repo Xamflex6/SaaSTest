@@ -1,6 +1,5 @@
 'use client';
-import { SignIn } from '@clerk/nextjs';
 
 export default function SignInPage() {
-  return <SignIn redirectUrl="/dashboard" />;
+  return <div>Connexion (authentification à implémenter)</div>;
 }

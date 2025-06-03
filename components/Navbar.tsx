@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-import { UserButton } from '@clerk/nextjs';
 import { ModeToggle } from './ModeToggle';
 
 export function Navbar() {
@@ -9,7 +8,6 @@ export function Navbar() {
       <Link href="/" className="font-bold">FocusTime</Link>
       <div className="flex items-center gap-4">
         <ModeToggle />
-        <UserButton afterSignOutUrl="/" />
       </div>
     </nav>
   );

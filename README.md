@@ -9,7 +9,7 @@ app/                # App Router pages
   layout.tsx        # Root layout with Navbar and Sidebar
   page.tsx          # Home with Timer and TaskList
   dashboard/        # Dashboard with charts and history
-  auth/             # Clerk auth pages
+  auth/             # Auth pages
 components/         # Reusable UI components
 lib/                # Zustand store and utilities
 public/             # Icons, manifest and service worker
@@ -30,11 +30,11 @@ npm install
 npm run dev
 ```
 
-The application uses Clerk for authentication, Supabase for data storage and Stripe Checkout for subscriptions.
+The application uses Supabase for data storage et Stripe Checkout pour les abonnements.
 
 ## Setup
 
 1. Copy `.env.local.example` to `.env.local`.
-2. Create projects on [Clerk](https://clerk.dev) and [Supabase](https://supabase.com) and paste their keys in `.env.local`.
-3. From your Stripe dashboard, create a price ID and add your publishable key and price in `.env.local`.
+2. Créez un projet sur [Supabase](https://supabase.com) et collez les clés dans `.env.local`.
+3. Depuis votre dashboard Stripe, créez un price ID et ajoutez votre clé publishable et le prix dans `.env.local`.
 4. Run `npm install` whenever `package.json` changes.

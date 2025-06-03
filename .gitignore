@@ -30,9 +30,6 @@ yarn-error.log*
 # Supabase CLI
 .supabase/
 
-# Clerk dev config
-.clerk/
-
 # sw cache
 public/sw.js
 public/manifest.json
