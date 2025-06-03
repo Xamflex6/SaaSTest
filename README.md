@@ -1,3 +1,8 @@
+Hey, 
+Introducing my first Saas with NextJS
+
+
+
 # FocusTime
 
 Pomodoro SaaS application built with Next.js 14, TypeScript, TailwindCSS and ShadCN UI.
