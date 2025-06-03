@@ -1,5 +1,5 @@
 'use client';
-import { useTheme } from 'next-themes';
+import { useTheme } from './ThemeProvider';
 import { Sun, Moon } from 'lucide-react';
 
 export function ModeToggle() {

@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { usePomodoroStore } from '../lib/store';
-import { Button } from '@shadcn/ui';
+import { Button } from './ui';
 
 export default function Timer() {
   const { timeLeft, isRunning, start, pause, reset } = usePomodoroStore();
