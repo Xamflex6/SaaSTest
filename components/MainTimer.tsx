@@ -134,7 +134,7 @@ export default function MainTimer() {
           <div className="flex flex-col items-center gap-1">
             <span className="text-2xl font-bold text-red-400">{pomodoroCount}</span>
             <span className="text-sm text-zinc-400 uppercase tracking-wide">
-              Pomodoros aujourd'hui
+              Pomodoros aujourd&apos;hui
             </span>
           </div>
           <div className="hidden sm:block w-px h-8 bg-zinc-600"></div>
